@@ -1,0 +1,14 @@
+[Unit]
+Description=Bad Janet PTT Voice Endpoint
+After=network.target
+Wants=network-online.target
+
+[Service]
+ExecStartPre=/bin/bash -c 'until ping -c1 172.16.100.11 &>/dev/null; do sleep 2; done'
+ExecStart=/usr/bin/python3 /opt/badjanet/bj-ptt.py
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
