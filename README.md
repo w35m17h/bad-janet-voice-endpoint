@@ -170,6 +170,20 @@ Press the PTT button on the HAT, speak your command, release. Bad Janet will res
 - PiSugar3 ARMv6 incompatibility: pisugar-server doesn't support Pi Zero W — use direct I2C instead
 - Two HATs in the package is normal 😄
 
+## Important Resources
+
+### Hardware Documentation
+- [ReSpeaker 2-Mics Pi HAT (Seeed Wiki)](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/) — schematic, pinout, general info
+- [KEYESTUDIO ReSpeaker HAT Documentation](https://docs.keyestudio.com/projects/KS0314/en/latest/docs/KS0314.html) — includes driver download links
+- [PiSugar3 I2C Datasheet](https://github.com/PiSugar/PiSugar/wiki/PiSugar-3-I2C-Datasheet) — register map, button control, power functions
+- [PiSugar3 Series Wiki](https://github.com/PiSugar/PiSugar/wiki/PiSugar-3-Series) — general hardware info
+- [PiSugar Case STLs (pihat-cap)](https://github.com/PiSugar/pisugar-case-pihat-cap) — 3D printable cases including ReSpeaker 2-mic variant
+
+### Software / Drivers
+- [Raspbian Bullseye Lite (armhf, 2023-05-03)](https://downloads.raspberrypi.com/raspios_lite_armhf/images/raspios_lite_armhf-2023-05-03/) — OS image used for sat1
+- [Keyestudio Dropbox Package](https://www.dropbox.com/scl/fo/4x60kwe9gpr3no0h6s2xl/AP9QcnN3ApKXkGh9CJPLDzU?rlkey=1sjn1xxr114zviozu0pguwpnd&e=3&dl=0) — contains mic_hat-master library, seeed-voicecard-6.1 driver, and Bullseye image ⚠️ unofficial but only known source for mic_hat-master
+
+
 ## Future Plans
 
 - Wake word detection (replace PTT)
